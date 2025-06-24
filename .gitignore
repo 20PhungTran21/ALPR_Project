@@ -1,2 +1,3 @@
-YOLOv8_fine_tune/
 myvenv/
+data_train/
+run_yolov8/
