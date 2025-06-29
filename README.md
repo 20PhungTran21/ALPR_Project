@@ -31,6 +31,6 @@ Phần IV: Huấn luyện mô hình (trainning model):
 - Đây chỉ là bước cơ bản ta huấn luyên mô hình sẽ sử dụng thêm các agumentations (tăng cường thêm dữ liệu) để hợp với thực tế hơn.
 
 Phần V: Thử nghiệm khi có mô hình:
-- Có thể thực hiện kiểm thử mô hình bằng file test.py. Cung cấp dữ liệu hình ảnh, video và camera để thử nghiệm
+- Có thể thực hiện kiểm thử mô hình bằng file predict.py. Cung cấp dữ liệu hình ảnh, video và camera để thử nghiệm
 - Các lần thực hiện huấn luyên sẽ được lưu lại dưới dạng .pt
 - Để trực quan hơn ta sẽ đưa dữ liệu lên google sheet để hiện thị kết quả benmark của từng lần huấn luyện, để đánh giá so sánh và cải tiến thêm. File upload_data.py dùng để kết nối làm việc với googlesheet thông qua key API link: https://console.cloud.google.com/apis, đăng ký và khởi tạo key API để tích hợp với cript. File này có dạng json. Thay thế SERVICE_ACCOUNT_FILE = Đường dẫn key api (lưu ý key nên nằm trên cùng thư mục với cript), GOOGLE_SHEET_URL là URL google của người dùng. Đọc thêm chú thích trong thư mục cript.
