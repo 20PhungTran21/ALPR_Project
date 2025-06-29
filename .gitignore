@@ -1,4 +1,9 @@
+.json
+.pt
+.mp4
+.avi
 myvenv/
 data_train/
 run_yolov8/
-.json
+run_yolov8_agu/
+

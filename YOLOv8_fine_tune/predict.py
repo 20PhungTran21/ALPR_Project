@@ -3,9 +3,9 @@ import cv2
 
 # ----------- CẤU HÌNH -------------
 mode = input("input type image or video or webcam: ")       # Chọn: "image", "video", hoặc "webcam"
-model_path = "run_yolov8/exp_yolov8_2/weights/best.pt"  # Đường dẫn tới mô hình (có thể là best.pt nếu fine-tune)
-image_path = "/home/phung/Desktop/ALPR_Project/data_train/test/images/30_jpg.rf.a5db454aa860fe890430cc78f039cac0.jpg"
-video_path = "video.mp4"
+model_path = "/home/phung/Desktop/ALPR_Project/run_yolov8/exp_yolov8_no_agu/best(15).pt"  # Đường dẫn tới mô hình (có thể là best.pt nếu fine-tune)
+image_path = "/home/phung/Desktop/ALPR_Project/data_train/test/images"
+video_path = "/home/phung/Desktop/ALPR_Project/RECAP - ROADSHOW ＂MUA XE NEW - TRÚNG XẾ YÊU＂.mp4vid"
 # ----------------------------------
 
 # Tải model YOLO

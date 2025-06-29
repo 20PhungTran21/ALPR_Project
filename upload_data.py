@@ -11,10 +11,10 @@ SERVICE_ACCOUNT_FILE = '/home/phung/Desktop/ALPR_OCR/gen-lang-client-0692198862-
 # URL đầy đủ của Google Sheet bạn muốn ghi dữ liệu vào
 # Đảm bảo Google Sheet này đã được chia sẻ với tài khoản dịch vụ
 # Ví dụ: 'https://docs.google.com/spreadsheets/d/1pjqIxLiJzIi4xnz5mlt3ts4nSP9ZTYGvnAlySQgSOYA/edit#gid=1108826699'
-GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1pjqIxLiJzIi4xnz5mlt3ts4nSP9ZTYGvnAlySQgSOYA/edit?gid=1108826699#gid=1108826699'
+GOOGLE_SHEET_URL = 'https://docs.google.com/spreadsheets/d/1hpQLlU01FOlE0LLzTUpjQ_8LA6Vj8CIMCsjS8FIJNfA/edit?gid=0#gid=0'
 
 # Tên của worksheet trong Google Sheet (ví dụ: 'Sheet1' hoặc 'Training_Results')
-WORKSHEET_NAME = 'YOLO_Benchmarks' 
+WORKSHEET_NAME = 'BM_Data' 
 
 # Đường dẫn đến thư mục chứa kết quả huấn luyện (ví dụ: runs/train/expX)
 # THAY THẾ 'runs/train/exp' BẰNG ĐƯỜNG DẪN CHÍNH XÁC CỦA BẠN
@@ -63,9 +63,6 @@ def upload_yolov5_results_to_sheet():
             'val_box_loss': latest_metrics.get('val/box_loss', 'N/A'),
             'val_cls_loss': latest_metrics.get('val/cls_loss', 'N/A'),
             'val_dfl_loss': latest_metrics.get('val/dfl_loss', 'N/A'), # Thêm val dfl_loss
-            'lr_pg0': latest_metrics.get('lr/pg0', 'N/A'), # Thêm learning rate
-            'lr_pg1': latest_metrics.get('lr/pg1', 'N/A'), # Thêm learning rate
-            'lr_pg2': latest_metrics.get('lr/pg2', 'N/A'), # Thêm learning rate
             'dataset_version': 'exp_yolov8_agu_fog' # Cập nhật tên dataset của bạn
         }
         
